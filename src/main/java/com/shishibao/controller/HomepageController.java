@@ -29,7 +29,7 @@ public class HomepageController {
         logger.info("请求主页列表。");
         List<Room> rooms = roomService.getRoomList();
         baseDTO.setRetCode("00000000");
-        baseDTO.setRetCode("成功");
+        baseDTO.setRetMsg("成功");
         baseDTO.setResults(rooms);
 
         logger.info("请求结果" + JSON.toJSONString(baseDTO));
